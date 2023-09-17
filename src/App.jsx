@@ -5,8 +5,8 @@ import Nav from "./components/Nav/Nav";
 function App() {
   return (
     <>
-      {/* <DaisyNav></DaisyNav> */}
       <Nav></Nav>
+      {/* <DaisyNav></DaisyNav> */}
       <h1 className="text-7xl">Vite + React</h1>
     </>
   );
