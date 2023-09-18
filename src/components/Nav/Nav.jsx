@@ -14,14 +14,16 @@ const Nav = () => {
   ];
 
   return (
-    <nav>
-      <div className="text-xl md:hidden" onClick={()=> SetOpen(!open)}>
+    <nav className="text-black">
+      <div className="text-2xl md:hidden p-6" onClick={()=> SetOpen(!open)}>
         {
             open === true? <AiOutlineClose></AiOutlineClose> : <AiOutlineMenu></AiOutlineMenu>
         }
         
       </div>
-      <ul className="md:flex">
+      <ul className={`md:flex p-3 absolute md:static duration-1000 bg-yellow-200
+      ${open ? 'top-16' : '-top-72'}
+      `}>
         {routes.map((route) => (
           <Links key={route.id} route={route}></Links>
         ))}
